@@ -4,7 +4,7 @@
 
 # HTML title tag content
 title = "deadlock_random_team_gen"
-base_path = "Deadlock-ARAM"
+base_path = "/Deadlock-ARAM/"
 
 # include `assets` in web platform
 [web.resource]

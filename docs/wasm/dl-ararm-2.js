@@ -2067,7 +2067,7 @@ export { wasm as __wasm }
 globalThis.__wasm_split_main_initSync = initSync;
 
 // Actually perform the load
-__wbg_init({module_or_path: "/./wasm/dl-ararm-2_bg.wasm"}).then((wasm) => {
+__wbg_init({module_or_path: "./wasm/dl-ararm-2_bg.wasm"}).then((wasm) => {
     // assign this module to be accessible globally
     globalThis.__dx_mainWasm = wasm;
     globalThis.__dx_mainInit = __wbg_init;

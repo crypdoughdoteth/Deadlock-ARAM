@@ -157,6 +157,17 @@ pub fn Home() -> Element {
                             },
                             "Generate"
                         }
+                    } else {
+                        button {
+                            onclick: move |_| {
+                                if duplicate_heros() {
+                                    gen_results.set(gen_heroes_with_repeat(state.read().iter()));
+                                } else {
+                                    gen_results.set(gen_heroes(state.read().iter()));
+                                }
+                            },
+                            "Regenerate"
+                        }
                     }
                 }
             }
